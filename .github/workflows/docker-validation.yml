@@ -15,3 +15,6 @@ jobs:
 
       - name: Show Repository Structure
         run: tree -a
+
+      - name: Validate Monitoring Stack Compose File
+        run: docker compose -f compose/monitoring-stack/compose.yml config
