@@ -1,8 +1,12 @@
-resource "local_file" "terraform_test" {
+module "terraform_demo_file" {
+  source = "../modules/local-file-module"
+
   filename = "terraform-output.txt"
 
   content = <<EOF
-Terraform is operational inside NovaLab Platform.
-This file was created through Infrastructure as Code.
+Project: ${var.project_name}
+Environment: ${var.environment}
+
+This file was created through a reusable Terraform module.
 EOF
 }

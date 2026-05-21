@@ -1,2 +1,0 @@
-Terraform is operational inside NovaLab Platform.
-This file was created through Infrastructure as Code.
