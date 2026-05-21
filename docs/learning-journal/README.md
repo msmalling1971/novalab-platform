@@ -52,3 +52,32 @@ Modern platform engineering environments increasingly operate as layered systems
 - GitHub Actions = automation/orchestration layer
 
 Understanding which layer owns the workload is critical for troubleshooting and operational clarity.
+CI/CD Realizations
+Git push triggers automation
+runners execute jobs
+workflows → jobs → steps model
+pipelines validate infrastructure before deployment
+GitHub Actions runners are ephemeral Linux workers
+Terraform Realizations
+declarative vs imperative infrastructure
+desired state reconciliation
+drift detection
+Terraform state as infrastructure memory
+infrastructure reproducibility
+Terraform ≠ backups/DR
+persistent data must still be protected separately
+Operational Realizations
+IaC standardizes infrastructure
+reduces configuration drift
+governance through code
+Git becomes infrastructure history
+CI/CD becomes automated governance enforcement
+emergency restore workflows still matter
+Terraform import critical for DR reconciliation
+
+Those notes are EXTREMELY valuable later for:
+
+your website
+architecture discussions
+leadership interviews
+modernization strategy conversations
