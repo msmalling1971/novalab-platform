@@ -19,3 +19,5 @@ Track existing Proxmox VMs before migrating them one-by-one into Terraform manag
 | VM Name | VMID | Role | CPU | RAM | Disk | Storage | Network Bridge | IP Address | Backup Protected | Terraform Status | Notes |
 |---|---:|---|---:|---:|---|---|---|---|---|---|---|
 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | Not Started | TBD |
+
+| 1 | netbox | 109 | Infrastructure Source of Truth / IPAM | Ubuntu 22.04.5 LTS | 2 | 6GB | 50GB | TBD | vmbr0 | 192.168.50.221/24 | TBD | Low/Medium | Not Started | Good first Terraform migration candidate. Needs NetBox DB/config export plan before rebuild. |
