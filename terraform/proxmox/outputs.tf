@@ -1,11 +1,11 @@
-output "generated_file" {
-  description = "The Terraform-managed output file"
+output "netbox_test_vm_name" {
+  value = module.netbox_test.vm_name
+}
 
-  value = module.terraform_demo_file.created_filename
+output "netbox_test_vm_id" {
+  value = module.netbox_test.vm_id
 }
 
 output "environment" {
-  description = "The active deployment environment"
-
   value = var.environment
 }

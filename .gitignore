@@ -3,3 +3,6 @@
 *.tfstate
 *.tfstate.*
 terraform-output.txt
+# Terraform secrets
+terraform.tfvars
+*.auto.tfvars

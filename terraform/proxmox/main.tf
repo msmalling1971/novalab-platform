@@ -1,12 +1,16 @@
-module "terraform_demo_file" {
-  source = "../modules/local-file-module"
+module "netbox_test" {
+  source = "../modules/proxmox-ubuntu-vm"
 
-  filename = "terraform-output.txt"
+  vm_name       = "netbox-test"
+  vm_id         = 120
+  target_node   = "prox1"
+  template_name = "ubuntu-2404-template"
 
-  content = <<EOF
-Project: ${var.project_name}
-Environment: ${var.environment}
+  cpu_cores    = 2
+  memory_mb    = 4096
+  disk_size    = "40G"
+  storage_name = "local-lvm"
+  bridge       = "vmbr0"
 
-This file was created through a reusable Terraform module.
-EOF
+  environment = var.environment
 }
