@@ -8,9 +8,12 @@ module "netbox_test" {
 
   cpu_cores    = 2
   memory_mb    = 4096
-  disk_size    = "40G"
+  disk_size    = 40
   storage_name = "local-lvm"
   bridge       = "vmbr0"
+
+  ci_user     = "novaadmin"
+  ci_password = "ChangeMe123!"
 
   environment = var.environment
 }
