@@ -24,8 +24,8 @@ variable "memory_mb" {
 }
 
 variable "disk_size" {
-  description = "Disk size"
-  type        = string
+  description = "Disk size in GB"
+  type        = number
 }
 
 variable "storage_name" {
@@ -48,3 +48,14 @@ variable "environment" {
   description = "Environment label"
   type        = string
 }
+variable "ci_user" {
+  description = "Cloud-init username"
+  type        = string
+}
+
+variable "ci_password" {
+  description = "Cloud-init password"
+  type        = string
+  sensitive   = true
+}
+
