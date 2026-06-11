@@ -59,3 +59,8 @@ variable "ci_password" {
   sensitive   = true
 }
 
+variable "ipconfig0" {
+  description = "Cloud-init network configuration for the primary network adapter"
+  type        = string
+  default     = "ip=dhcp"
+}
