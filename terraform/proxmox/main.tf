@@ -37,10 +37,10 @@ module "ubuntu_test_02" {
 
   environment = var.environment
 }
-module "k3s_test_01" {
+module "k3s_control_01" {
   source = "../modules/proxmox-ubuntu-vm"
 
-  vm_name       = "k3s-test-01"
+  vm_name       = "k3s-control-01"
   vm_id         = 130
   target_node   = "prox1"
   template_name = "ubuntu-2404-template"
@@ -56,6 +56,6 @@ module "k3s_test_01" {
 
   ipconfig0 = "ip=192.168.50.130/24,gw=192.168.50.1"
 
-  ssh_public_key = file("/mnt/c/Users/msmalling/.ssh/id_ed25519.pub")
+  ssh_public_key = file("~/.ssh/id_ed25519.pub")
   environment    = var.environment
 }

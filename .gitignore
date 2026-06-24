@@ -6,3 +6,15 @@ terraform-output.txt
 # Terraform secrets
 terraform.tfvars
 *.auto.tfvars
+# Terraform lock and crash files
+crash.log
+crash.*.log
+
+# Terraform plan files
+*.tfplan
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

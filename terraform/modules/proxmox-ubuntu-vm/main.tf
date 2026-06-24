@@ -28,7 +28,7 @@ resource "proxmox_vm_qemu" "ubuntu_vm" {
   # QEMU guest agent improves Proxmox visibility into the VM.
   # onboot starts the VM automatically with the Proxmox host.
   # ---------------------------------------------------------
-  agent  = 0
+  agent  = 1
   onboot = true
 
   # ---------------------------------------------------------
