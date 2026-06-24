@@ -87,4 +87,5 @@ resource "proxmox_vm_qemu" "ubuntu_vm" {
   ciuser     = var.ci_user
   cipassword = var.ci_password
   ipconfig0 = var.ipconfig0
+  sshkeys = var.ssh_public_key
 }

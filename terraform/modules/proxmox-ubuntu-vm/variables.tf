@@ -64,3 +64,8 @@ variable "ipconfig0" {
   type        = string
   default     = "ip=dhcp"
 }
+variable "ssh_public_key" {
+  description = "Public SSH key injected by cloud-init"
+  type        = string
+  default     = ""
+}
