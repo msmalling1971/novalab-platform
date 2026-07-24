@@ -1,0 +1,8 @@
+{
+  "frameworkVersion": 1,
+  "repositoryName": "NovaLab Platform",
+  "startHerePath": "docs/START-HERE.md",
+  "checkpointDirectory": "docs/sessions",
+  "developmentEnvironmentPath": "docs/DEVELOPMENT-ENVIRONMENT.md",
+  "architecturePath": "docs/architecture/repository-bootstrap-framework.md"
+}
