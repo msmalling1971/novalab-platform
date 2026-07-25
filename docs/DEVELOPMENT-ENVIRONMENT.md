@@ -12,11 +12,11 @@ Open the repository root as the VS Code workspace. VS Code detects `.vscode/task
 
 The task selects behavior by execution environment:
 
-- Native Windows invokes Windows PowerShell directly and displays a Windows message box.
+- Native Windows invokes Windows PowerShell directly and displays a Windows Forms reminder. Select **Continue**, press Enter, or press Escape to dismiss it.
 - VS Code Remote WSL invokes the Bash launcher, detects WSL, translates the workspace and script paths with wslpath -w, and starts Windows PowerShell through WSL interoperability.
 - Native Linux invokes PowerShell 7 and uses terminal output. If PowerShell 7 is unavailable, the launcher prints a minimal terminal reminder.
 
-All modes continue passing the workspace root and reading config/repository-bootstrap.json.
+All modes continue passing the workspace root and reading `config/repository-bootstrap.json`. The repository name, window title, reminder heading and items, closing text, and Continue button label are configuration-driven.
 
 Run it manually from the repository root:
 

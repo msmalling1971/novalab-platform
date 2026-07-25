@@ -17,7 +17,7 @@ scripts/bootstrap/launch-repository-bootstrap.sh
        -> WSL: wslpath -w -> Windows PowerShell
        -> Linux: PowerShell 7
   -> config/repository-bootstrap.json
-  -> small popup or terminal fallback
+  -> configuration-driven Windows Forms reminder or terminal fallback
   -> docs/START-HERE.md
 ```
 
@@ -33,7 +33,7 @@ Configuration lives in visible `config/`, a conventional location for versioned 
 
 The task runs on folder open, subject to Workspace Trust and automatic-task permission. Native Windows uses Windows PowerShell directly. Linux and WSL use the Bash launcher. It detects WSL, translates paths with wslpath -w, and invokes Windows PowerShell through WSL interoperability. Native Linux uses PowerShell 7 and terminal fallback.
 
-Both launch paths pass the workspace root to the same PowerShell script. The script reads the fixed configuration path, validates configured relative paths, shows the fixed reminder, falls back safely, and performs no writes or network operations.
+Both launch paths pass the workspace root to the same PowerShell script. The script reads the fixed configuration path, validates configured relative paths and display text, shows the reminder, falls back safely, and performs no writes or network operations. On interactive Windows, the Windows Forms interface can be dismissed with the configuration-driven Continue button, Enter, Escape, or the window close control.
 
 ## Reuse
 

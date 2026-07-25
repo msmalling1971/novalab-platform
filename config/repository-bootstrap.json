@@ -1,6 +1,16 @@
 {
-  "frameworkVersion": 1,
+  "frameworkVersion": 1.1,
   "repositoryName": "NovaLab Platform",
+  "windowTitle": "Repository Bootstrap Framework",
+  "reminderHeading": "Today's Reminder",
+  "reminderItems": [
+    "Read START HERE",
+    "Review today's checkpoint",
+    "Run git status",
+    "Confirm today's objective"
+  ],
+  "closingText": "Happy Engineering.",
+  "continueButtonText": "Continue",
   "startHerePath": "docs/START-HERE.md",
   "checkpointDirectory": "docs/sessions",
   "developmentEnvironmentPath": "docs/DEVELOPMENT-ENVIRONMENT.md",
