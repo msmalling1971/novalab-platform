@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: gitops-demo
+  namespace: default
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: gitops-demo
+
+  template:
+    metadata:
+      labels:
+        app: gitops-demo
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
